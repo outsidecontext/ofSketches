@@ -1,13 +1,52 @@
-# Compiled Object files
-*.slo
-*.lo
+# project specific
+
+# ignore core oF files that we dont want to track
+libs/*
+other/*
+scripts/*
+examples/*
+
+
+# OF-specific ignore patterns
+
+openFrameworks.a
+openFrameworksDebug.a
+openFrameworksUniversal.a
+
+# Some general ignore patterns
+
+build/
+obj/
 *.o
+Debug*/
+Release*/
+*.mode*
+*.app/
+*.pyc
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
+# IDE-specific ignore patterns
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+#XCode
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode1v3
+*.mode2v3
+#XCode 4
+xcuserdata
+*.xcworkspace
+
+# OS-specific ignore patterns
+
+#OSX
+.DS_Store
+*.swp
+*~.nib
+# Thumbnails
+._*
+
+#Windows
+# Windows image file caches
+Thumbs.db
+# Folder config file
+Desktop.ini
