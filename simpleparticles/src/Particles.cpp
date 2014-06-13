@@ -5,7 +5,7 @@ Particles::Particles() {
 }
 
 void Particles::setup(){
-	int num = 800;
+	int num = 2000;
 	p.assign(num, Particle());
 	currentMode = PARTICLE_MODE_ATTRACT;
 	resetParticles();
@@ -45,13 +45,11 @@ void Particles::updateAttractPoints(){
 
 void Particles::update(){
 	
-    /*
-	for(int i = 0; i < attractPointsWithMovement.size(); i++){
-		attractPointsWithMovement[i].x = attractPoints[i].x + ofSignedNoise(i * 10, ofGetElapsedTimef() * 0.7) * 12.0;
-		attractPointsWithMovement[i].y = attractPoints[i].y + ofSignedNoise(i * -10, ofGetElapsedTimef() * 0.7) * 12.0;
-		attractPointsWithMovement[i].z = attractPoints[i].z + ofSignedNoise(i * -10, ofGetElapsedTimef() * 0.7) * 12.0;
-	}
-     */
+//	for(int i = 0; i < attractPointsWithMovement.size(); i++){
+//		attractPointsWithMovement[i].x = attractPoints[i].x + ofSignedNoise(i * 10, ofGetElapsedTimef() * 0.7) * 12.0;
+//		attractPointsWithMovement[i].y = attractPoints[i].y + ofSignedNoise(i * -10, ofGetElapsedTimef() * 0.7) * 12.0;
+//		attractPointsWithMovement[i].z = attractPoints[i].z + ofSignedNoise(i * -10, ofGetElapsedTimef() * 0.7) * 12.0;
+//	}
     
     // TODO: swap this out for flann nearest neigbour?
     for(int i = 0; i < p.size(); ++i){

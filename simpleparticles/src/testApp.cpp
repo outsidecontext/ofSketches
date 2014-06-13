@@ -33,6 +33,12 @@ void testApp::keyPressed(int key){
             particles.p[i].flock = !particles.p[i].flock;
         }
     }
+    else if (key=='m') {
+        if (particles.currentMode == PARTICLE_MODE_ATTRACT)
+            particles.currentMode = PARTICLE_MODE_REPEL;
+        else
+            particles.currentMode = PARTICLE_MODE_ATTRACT;
+    }
 
 }
 

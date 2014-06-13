@@ -245,6 +245,8 @@
 /* Begin PBXProject section */
 		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "simpleparticles" */;
 			compatibilityVersion = "Xcode 2.4";
 			developmentRegion = English;
@@ -470,6 +472,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = simpleparticlesDebug;
+				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -556,6 +559,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = simpleparticles;
+				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
