@@ -1,0 +1,6 @@
+ofxKinect
+ofxOpenCv
+ofxOsc
+ofxXmlSettings
+ofxOpticalFlowFarneback
+ofxRemoteUI
