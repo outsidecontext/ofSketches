@@ -3,7 +3,7 @@
 
 //--------------------------------------------------------------
 int main(){
-    bool antiAlias=true;
+    bool antiAlias=false;
     bool fullScreen=true;
 	ofAppGlutWindow window;
     if (antiAlias) window.setGlutDisplayString("rgb alpha double samples depth"); //rgb double depth alpha samples>=4
